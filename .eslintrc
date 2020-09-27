@@ -1,0 +1,93 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "react-app",
+    "airbnb"
+  ],
+  "settings": {
+    "import/resolver": {
+    "node": {
+      "moduleDirectory": [
+      "node_modules",
+      "./src"
+      ]
+    }
+    }
+  },
+  "rules": {
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/interactive-supports-focus": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/anchor-is-valid": [ "warn", {
+    "components": [ "Link" ],
+    "specialLink": [ "to" ]
+    }],
+    "react/jsx-filename-extension": [
+    1,
+    {
+      "extensions": [
+      ".js",
+      ".jsx"
+      ]
+    }
+    ],
+    "react/no-did-update-set-state": "error",
+    "react/no-did-mount-set-state": "error",
+    "react/destructuring-assignment": [
+    0,
+    "always"
+    ],
+    "react/jsx-wrap-multilines": "error",
+    "object-curly-spacing": [
+    "error",
+    "always",
+    {
+      "arraysInObjects": true,
+      "objectsInObjects": true
+    }
+    ],
+    "object-curly-newline": [
+    "error",
+    {
+      "consistent": true
+    }
+    ],
+    "lines-between-class-members": [
+    "error",
+    "always",
+    {
+      "exceptAfterSingleLine": true
+    }
+    ],
+    "array-bracket-spacing": [
+    "error",
+    "never"
+    ],
+    "computed-property-spacing": [
+    "error",
+    "never"
+    ],
+    "comma-dangle": 0,
+    "arrow-parens": [
+    "error",
+    "as-needed"
+    ],
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "operator-linebreak": [
+    "error",
+    "after"
+    ],
+    "no-lonely-if": 2,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/no-named-as-default-member": "off",
+    "import/no-named-as-default": "off",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}]
+  }
+  }
