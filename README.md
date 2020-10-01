@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This is a small demo of a React application were the goal is to demonstrate how to use props and state applying the best practices
+
 ## Enabling Airbnb linter
 
 This project is using Airbnb's eslint configuration. If you want that to work in your environment, you'll need to create a `.env` file in your workspace with the following content:
