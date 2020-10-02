@@ -1,10 +1,14 @@
 import React from 'react';
 
 function App() {
+  const [text, setTextState] = React.useState('Once you write something, this will disapear');
+  const handleOnChange = event => {
+    setTextState(event.target.value);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <input type="text" onChange={handleOnChange} placeholder="write something" />
+      <p>{ text }</p>
     </div>
   );
 }
